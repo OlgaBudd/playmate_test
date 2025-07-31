@@ -1154,7 +1154,7 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MORE JS
-		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('PlayMaxProject-HTML5-Shipping.data.js'));
+		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/OlgaBudd/playmate_test/refs/heads/main/PlayMaxProject-HTML5-Shipping.data.js?token=GHSAT0AAAAAADIL26XNJQPVBAWA5FV76QVI2ELPXGQ'));
 		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('Utility.js')).then(addScriptToDom);
 		var dataDownload =
 /* // The following code would download and store the .data file as a Blob, which should be more efficient than loading an ArrayBuffer. However that seems to be buggy, so avoid it for now.
