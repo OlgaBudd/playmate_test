@@ -1133,7 +1133,7 @@ $(document).ready(function() {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: true };
 			});
 		}).catch(function() {
-			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/l4aa7617wkwtwzjqhs3c8/PlayMaxProject-HTML5-Shipping.wasm?rlkey=h94k2hdjwg0f8r5cxwcr83dtp&st=84hs7po2&dl=0'), 'arraybuffer').then(function(wasmBytes) {
+			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/l4aa7617wkwtwzjqhs3c8/PlayMaxProject-HTML5-Shipping.wasm?rlkey=h94k2hdjwg0f8r5cxwcr83dtp&st=ipiwthp6&dl=0'), 'arraybuffer').then(function(wasmBytes) {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: false };
 			});
 		});
@@ -1167,9 +1167,9 @@ $(document).ready(function() {
 			});
 */
 // Instead as a fallback, download as ArrayBuffer. (TODO: Figure out the bugs with the above, and switch to using that one instead)
-			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/u6yh8zaaik3ixeed67rb1/PlayMaxProject-HTML5-Shipping.data?rlkey=2yk03td0uwoi3tc1uoxhnqmrc&st=y99o2h30&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
+			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/u6yh8zaaik3ixeed67rb1/PlayMaxProject-HTML5-Shipping.data?rlkey=2yk03td0uwoi3tc1uoxhnqmrc&st=t9ng486u&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
-				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/u6yh8zaaik3ixeed67rb1/PlayMaxProject-HTML5-Shipping.data?rlkey=2yk03td0uwoi3tc1uoxhnqmrc&st=y99o2h30&dl=0')] = dataArrayBuffer;
+				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/u6yh8zaaik3ixeed67rb1/PlayMaxProject-HTML5-Shipping.data?rlkey=2yk03td0uwoi3tc1uoxhnqmrc&st=t9ng486u&dl=0')] = dataArrayBuffer;
 				return dataJsDownload.then(addScriptToDom);
 			});
 
